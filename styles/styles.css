@@ -1,0 +1,274 @@
+/* Resetear estilos predeterminados de enlaces */
+a {
+    text-decoration: none; /* Eliminar subrayado */
+    color: inherit; /* Heredar color del texto */
+}
+
+/* Aplicar fuente Arial a todos los elementos de la página */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: table-footer-group;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.logo {
+    display: inline-block;
+        text-align: left;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 0;
+        border: none;
+        vertical-align: top;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+/* Estilos para las opciones de navegación */
+nav {
+    display: flex;
+}
+
+.nav-links-left {
+    display: flex;
+    list-style-type: none;
+    align-items: flex-end; /* Alinear los elementos del flexbox en la parte inferior */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links-right {
+    display: flex;
+    list-style-type: none;
+    align-items: flex-end; /* Alinear los elementos del flexbox en la parte inferior */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links-left li {
+    margin-right: 25px;  /* Espacio entre las opciones de navegación */
+}
+
+.nav-links-right li {
+    margin-left: 25px;  /* Espacio entre las opciones de navegación */
+}
+
+.nav-links-left li:last-child, .nav-links-right li:last-child {
+    margin-right: 0; /* Quita el margen derecho de la última opción */
+}
+
+.nav-links-left a, .nav-links-right a {
+    color: black; /* Cambia el color del texto de las opciones de navegación */
+}
+
+.nav-links-left a:hover, .nav-links-right a:hover {
+    color: gray; /* Cambia el color del texto al pasar el mouse sobre las opciones de navegación */
+}
+
+.nav-links-left a:focus, .nav-links-right a:focus {
+    outline: none; /* Elimina el contorno al seleccionar una opción de navegación */
+}
+
+/*Botón */
+.btn {
+    display: inline-block;
+    background-color: #ffbc0d;
+    color: white;
+    margin-left: 50px;
+    margin-right: 250px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #bea101;
+}
+
+/*Hero*/
+
+.hero {
+    background-image: url(../images/hero.jpg); /* imagen de fondo hamburguesas */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+
+/*Footer*/
+footer {
+    background-color: #ffbc0d;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    max-width: 40px;
+}
+
+.footer-circles {
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    width: 25px; /* Tamaño del círculo */
+    height: 25px; /* Tamaño del círculo */
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 0 10px; /* Espacio entre los círculos */
+}
+
+.productos-container {
+    display: grid;
+    grid-template-columns: repeat(7, auto); /* 7 columnas con ancho automático */
+    gap: 10px; /* Espacio entre las celdas */
+    text-align: center; /* Alinear contenido al centro */
+}
+
+/* Estilo para las imágenes */
+.imagen {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.nosotros-img {
+    max-width: 500px;
+}
+
+.nosotros-container {
+    display: flex;
+    align-items: center; /* Alinear verticalmente los elementos */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.nosotros-texto-container {
+    flex: 1; /* El contenedor del texto ocupa el espacio disponible */
+}
+
+/* Estilo del contenedor de la sección */
+.contacto-section {
+    text-align: center; /* Alinear contenido al centro */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo para el título */
+.contacto-titulo {
+    font-size: 24px; 
+    font-weight: bold;
+}
+
+/* Estilo para el texto descriptivo */
+.contacto-descripcion {
+    margin-top: 10px;
+}
+
+/* Estilo para el formulario */
+.contacto-formulario {
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+    text-align: left;
+}
+
+/* Estilo para el botón de enviar */
+.btn-enviar {
+    display: inline-block;
+    background-color: #ffbc0d;
+    color: white; /* Color del texto */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background-color: #bea101;
+}
+
+.boton-conocer-mas {
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #ffbc0d;
+    color: white; 
+    text-decoration: none; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.boton-conocer-mas:hover {
+    background-color: #bea101;
+}
+
+.contacto-formulario {
+     /* Estilo para los campos de entrada */
+     input[type="text"],
+     input[type="email"],
+     textarea {
+         width: 100%; /* Ancho completo */
+         padding: 10px; /* Espaciado interno */
+         box-sizing: border-box; /* Incluir el padding en el tamaño total */
+         border: 1px solid #ccc; /* Borde */
+         border-radius: 5px; /* Bordes redondeados */
+     }
+}
+
+
+ /* Estilo del contenedor */
+ .contenedor {
+    text-align: center;
+}
+
+
+/* Estilo para los botones */
+.boton {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #b0b0b1;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo para el espacio entre los botones */
+.cantidad {
+    margin-top: 10px;
+    font-size: 18px;
+}

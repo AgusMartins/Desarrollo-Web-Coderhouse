@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald’s</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links-left">
+                <li><a href="../pages/ordenar.html" class="btn">Ordenar</a></li>
+                <li><a href="../index.html #productos">Productos</a></li>
+                <li><a href="../pages/locales.html">Locales</a></li>
+            </ul>
+            <div class="logo">
+                <a href="../index.html"><img src="../images/logo.png" alt="McDonald’s logo"></a>
+            </div>
+            <ul class="nav-links-right">
+                <li><a href="../index.html #nosotros">Nosotros</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contacto-section">
+            <h2 class="contacto-titulo">Contacto</h2>
+            <p class="contacto-descripcion">Completa el formulario con tus datos</p>
+            <form class="contacto-formulario" action="submit.php" method="POST">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellido" placeholder="Apellido" required>
+                <input type="email" name="email" placeholder="Correo Electrónico" required>
+                <textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../images/footer-logo.png" alt="McDonald’s logo">
+                <span>© McDonald’s 2024</span>
+            </div>
+            <div class="footer-circles">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <ul>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
